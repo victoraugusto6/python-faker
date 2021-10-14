@@ -3,5 +3,6 @@ from faker import Faker
 fake = Faker('pt_BR')
 
 for _ in range(5):
-    print(fake.name(), '\n')
-    print(fake.address(), '\n')
+    print(f'Nome: {fake.name()}\n'
+          f'CPF: {fake.cpf()}\n'
+          f'Endereço: {fake.address()}\n')
